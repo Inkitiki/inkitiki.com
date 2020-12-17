@@ -1,0 +1,303 @@
+<!DOCTYPE html><meta charset='utf-8'>
+
+<title>InkiTiki</title>
+<link rel=canonical href=http:/inkitiki.com/>
+
+<link rel='shortcut icon' href=logo.svg>
+<link rel=icon href=logo.svg>
+<meta name=viewport content='width=device-width,initial-scale=1'>
+
+<link rel=stylesheet href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+<meta name=description content="Smart software for uniquely complex challenges &ndash; We specialize in combining artificial intelligence. social, learning, games, and novel designs into powerful web and mobile solutions.">
+<meta name=keywords content="AI, deep AI, artificial intelligence, cognitive technologies, advanced software, learning, social, games, simulations, innovation, research, design, development">
+
+
+<!-- STYLE  \ / \ | / \ / \ | / \ / \ | / \ / \ | /
+-->
+<style>
+* { padding:0; margin:0; outline:0 }
+html {
+	background:#fefefe; color:#171313; cursor:default;
+	font:.85em/1.2 'DejaVu Sans', Lato, 'Helvetica Neue',
+		Helvetica, Roboto, 'Arial Nova', 'Lucida Grande',sans-serif
+}
+body >div>div { max-width:72em; margin:0 auto; padding:1.5em; text-align:center }
+.fa { margin-right:.25em }
+
+h1, h2, h3, h4, h5, h6 { font-size:1em; font-weight:300 }
+h3, h4 { font-size:2em; letter-spacing:.03em; }
+h5 { font-size:1.3em; font-weight:normal }
+p { margin:1em 0 }
+img { vertical-align:middle }
+
+a { color:#30a0c0; text-decoration:none; cursor:pointer }
+a:hover, a:focus { color:#c53 }
+b { font-weight:bold }
+
+.clear:after { content:""; display:block; clear:both }
+
+.button {
+	background:#366a8a; background: linear-gradient(0deg, #467aaa,#366a8a);
+	color:#eaeaea;
+	font-size:1.4em; padding:.35em 1.35em; 
+	border:1px solid #bbb; border-radius:1em;
+}
+.button:hover, .button:focus {
+	background: linear-gradient(0deg, #477aba,#366a8a);
+	color:#fff;  border-color:#ddd; text-shadow:0 1px 1px #777;
+}
+.button:active { background:#365a6a; border-color:#ccc; color:#eee }
+
+
+/* -- HEADER, MENUBAR, HERO
+*/
+#header {
+	background:url('header.jpg'),linear-gradient(to bottom right, #0F1A2E 60%, #3B64B3);
+	background-size:cover; color:#fefefe;
+}
+x#header:after { /* the blue ribbon edge */
+	content:""; display:block; height:.25em;
+	background:#e3fafe; /* fallback */
+	background: repeating-linear-gradient(60deg, #caeaee, #caeaee .2em, #fcfcfc .5em);
+	border-bottom:1px solid #aaa; 
+}
+
+#menubar {
+	position:relative; text-align:right; list-style:none; padding-right:.5em; }
+#menubar>li { display:inline; margin-left:1.5em }
+#menubar a { color:#eaebed }
+#menubar a:hover, #menubar a:focus { color:#fff; text-shadow:1px 1px 0 #ddd }
+#brand { position:absolute; left:-1.5em }
+#brand a { font-weight:bold; font-size:1.25em; }
+#brand a:hover, #brand a:focus { text-shadow:none }
+
+h1 { font-size:4em; padding:1.5em 0 0; position:relative }
+h1:after { position:absolute; padding-left:.3em; top:1.5em; content:'*'; font-size:.8em; }
+h2 { font-size:2.85em; line-height:1.5; font-weight:300; margin:1em 0 1.2em }
+/* +++++++++++++++++++ TODO */
+#hero-cta { display:inline-block; text-align:right } /* to align button relative to text */
+#hero-cta p { padding:1.8em .5em 2.5em }
+
+/* -- SIDEKICK
+*/
+#sidekick { background:#2a2b2b; color:#fafafa; }
+#sidekick >div { display:flex; flex-wrap:wrap; padding:0; font-size:1.2em }
+#sidekick >div >div { flex:1; padding:1em 1.5em;
+	xbackground:url("logo.svg") no-repeat center 1em;
+}
+
+/* -- VALPROP, CLIENTS, SERVICES, and CTA
+*/
+#valprop, #services { padding:2.5em 1.5em; }
+#valprop p, #services p { font-size:1.25em; line-height:1.6; font-weight:300 }
+
+#clients {
+	background:#eaecf0; border:1px solid #ddd; border-width:1px 0;
+	text-align:center;white-space:nowrap;
+	overflow:hidden; padding:1.25em 0;
+}
+#clients>div>div {
+	height:4em; margin:1em auto;
+	display:inline-block; padding:1em; text-align:center;
+}
+#clients img { height:4em; opacity:.6; padding-bottom:.5em }
+
+#cta {
+	background:#52595D; color:#fefefe; text-align:center; box-shadow:0 0 .5em #777 }
+#cta >div { padding:4.5em 0 1em; display:inline-block; text-align:right }
+#cta p { padding:1.8em .5em 3.25em }
+
+
+/* -- FOOTER
+*/
+#footer >div { margin:2em 0; text-align:left }
+#footer .legal { font-size:.9em }
+
+</style>
+
+
+<!-- PAGE HEADER and HERO  \ / \ | / \ / \ | / \ / \ | / \ / \ | /
+-->
+<div id=header><div>
+	<ul id=menubar>
+		<li id=brand><a href='/'>
+			<img src='logo.svg' style='height:1.2em'> inkitiki</a></li>
+		<li><a class=contact href="mailto:sales&#64;inkitiki.com">Contact</a></li>
+	</ul>
+
+	<h1><i!-- mg src=inkitiki.svg -->
+		<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 345 70" style="width:6.5em">
+			<defs>
+				<path id="Ki" d="m25,0a25,25,90,0,1,-25,25a25,25,-90,0,1,25,25m25,0v-25m0,-25v0"/>
+			</defs>
+			<g stroke="#f0f0f0" stroke-width="20" transform="translate(10 10)"
+					stroke-linejoin="round" stroke-linecap="round" fill="transparent">
+				<path d="m0,0v50m25,0v-20a25,25,180,1,1,50,0v20"/>
+				<use x="100" href="#Ki"/>
+				<path d="m175,0h50m-25,25v25m50,0v-25m0,-25v0"/>
+				<use x="275" href="#Ki"/>
+			</g>
+		</svg>
+	</h1>
+	<h2>
+		<b>Artificial intelligence</b>
+		<br>for serious technologies
+	</h2>
+	<!-- h2>
+		<b>Artificial intelligence</b><br>Smart technologies
+	</h2 -->
+<script>
+/*
+	Artificial intelligence, Deep AI, Smart software, Smart technologies
+	serious, advanced, radical
+	technologies, humans, nnovation, applications, organizations
+
+	Leapfrog the competition
+			menu, hero, sidekick, featured, primer, gallery
+
+		<b>Artificial intelligence</b>
+		<br>for&nbsp;serious organizations
+		<b>Software intelligence</b>
+		<br>for&nbsp;serious innovation
+	</h2>
+	Internet AI, Perception AI, and Autonomous AI, Business AI
+*/
+</script>
+</div></div>
+
+
+<!-- MAIN  \ / \ | / \ / \ | / \ / \ | / \ / \ | /
+-->
+<div id=sidekick><div>
+	<div><img src=logo.svg><br>
+		Deep AI</div>
+	<div><img src='logo.svg''><br>
+		Transdisciplinary R/R&amp;D</div>
+	<div><img src=logo.svg><br>
+		Emerging Technologies</div>
+	<div><img src=logo.svg><br>
+		U.S.&nbsp;Federal R/R&amp;D</div>
+</div></div>
+
+
+<div id=services><div>
+	<h3>Out-innovate, Outthink the Competition</h3>
+	<p>Augmented AI
+	<p>Synergistic AI
+	<p>Collaborative AI
+	<p>Composable AI modules
+	<p>Smart designs -- clever design thinking ptocess
+	<p>Smart products -- AI + emerging technologies
+	<p>Smart incubation -- Lean innovation incubation process
+
+	<p>thorny challenges, big opportunities
+	<h3>Faster and Better Innovation</h3>
+	We offer all to get better innovation, faster --  ideation, innovation incubation, research, prototyping, and engineering. Invent, validate, optimize, and launch mission-critical products built with the latest emerging technologies.
+	<br>Your challenge, your or our ideas, our process
+	<br>Discovery of challenges and opportunities
+	<br>Edge your competition
+	<br>Accelerating pace of innovation and technological change -- faster innovation with fresh new ideas and emerging technologies
+	<h3>Mission-critical technologies and systems</h3>
+	<br>for <b>unique</b>, <b>mission-critical</b> challenges
+	<p><b>Ideation</b> through <b>advanced research</b>, <b>design</b>, and <b>engineering</b>
+	<br>Focus on Leveraging/Capitalizing AI, Social Crowds, Learning, Augmented
+	<br>Iterative processes
+	<br>Innovate, Build, Integrate, Optimize
+</div></div>
+
+<div id=clients><div>
+	<h5>Global leaders rely on us.</h5>
+	<div title="U.S. Office of the Secretary of Defense">
+		<img src="dod.gif">
+		<br>OSD</div>
+	<div title="Defense Advanced Research Projects Agency">
+		<img src="darpa.png">
+		<br>DARPA</div>
+	<div title="U.S. Navy Office of Naval Research">
+		<img src="onr.png">
+		<br>ONR</div>
+	<div title="U.S. Navy Naval Air Systems Command">
+		<img src="navair.png"><br>NAVAIR</div>
+	<div title="U.S. Navy">
+		<img src="navy.gif"><br>NAVY</div>
+	<div title="U.S. Department of Agriculture">
+		<img src="usda.png"><br>USDA</div>
+</div></div>
+<div id=valprop><div>
+	<h4>Transdisciplinary research and R&amp;D</h4>
+	<p><b>Deep AI</b>, <b>social</b>,
+		<b>learning</b>, <b>games</b>, <b>simulations</b>
+	<p>&ndash; for powerful <b>web</b> and <b>mobile</b> solutions
+</div></div>
+
+
+<div id=cta><div>
+	<div id=hero-cta>
+		<h4>Want to create something amazing?</h4>
+		<p><a class="contact button" href='mailto:sales&#64;inkitiki.com'>
+			<i class='fa fa-comments-o'></i> Let's Talk!</a>
+	</div>
+	<h4>What is your next innovation?</h4>
+	<p><a class="contact button" href='mailto:sales&#64;inkitiki.com'>
+		<i class='fa fa-comments-o'></i> Call Us!</a>
+</div></div>
+
+
+<!-- PAGE FOOTER  \ / \ | / \ / \ | / \ / \ | / \ / \ | /
+-->
+<div id=footer><div>
+	<p><img src='logo.svg' style='height:1em'> <b>inkitiki</b>
+	<p class=legal>Copyright &copy; 1999-2017 InkiTiki Corporation. All rights reserved.
+</div></div>
+
+
+<!-- SCRIPTS  \ / \ | / \ / \ | / \ / \ | / \ / \ | /
+-->
+<script>
+navigator.sendBeacon = navigator.sendBeacon || function (url, data) {
+	var xhr = new XMLHttpRequest()
+	xhr.open('POST', url) // async call may lose data but has better performance
+	if (typeof data == 'string' || typeof data == 'object' && data instanceof String)
+		xhr.setRequestHeader('Content-Type', 'text/plain; charset=utf-8')
+	xhr.send(data)
+}
+
+navigator.sendBeacon('https://api.inkitiki.com/post/Inkitiki', [
+		'URL=' + location.toString(),
+		'User-time=' + Date().toString(),
+		'Browser=' + [
+			(navigator.userAgent.match(/(?:OPR|Opera|MSIE|Chrome|Safari|Firefox).\d+\.\d+/)
+				|| navigator.userAgent.match(/(?:Opera|Safari).*?Version.\d+\.\d+/)
+				|| navigator.userAgent.match(/\w+\/\d+\.\d+$/)
+				|| [ '' ])[0].replace('OPR', 'Opera').replace(/^(\w+).*(\d+\.\d+)$/, '$1 $2'),
+			(navigator.userAgent.match(/Gecko|AppleWebKit|Presto|Trident|Blink/) || [ '' ])[0],
+			(navigator.userAgent.match(/Mobil?e?|Tablet/) || [ 'Desktop' ])[0]
+		].join(', '),
+		'Screen=' + screen.width + 'x' + screen.height
+			+ (screen.orientation? ', ' + screen.orientation.type + ' (' + screen.orientation.angle + ')': ''),
+		'Viewport=' + innerWidth + 'x' + innerHeight,
+		'Languages=' + navigator.languages.join(', '),
+		'Platform=' + navigator.platform + ', ' + (navigator.hardwareConcurrency || 1) + ' cores',
+		'Referrer=' + document.referrer || '(no referrer)',
+		'Cookies=' + navigator.cookieEnabled? document.cookie: '(disabled)',
+		'History=' + history.length
+		// navigator.mimeTypes ->  description, enabledPlugin, suffixes, type
+		// navigator.plugins -> descripton, filename, version, name
+		//
+	].map(function (s) { return s.replace(/&/g, ' | ') })
+	.join('&'))
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62896032-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+

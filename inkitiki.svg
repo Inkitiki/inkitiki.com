@@ -1,0 +1,26 @@
+<svg version="1.1"
+		width="345" height="70"
+		xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+		<path id="I" d="m0,0v50"/>
+		<path id="N" d="m0,50v-20a25,25,180,1,1,50,0v20"/>
+		<path id="K" d="m25,0a25,25,90,0,1,-25,25a25,25,-90,0,1,25,25"/>
+		<path id="T" d="m0,0h50m-25,25v25"/>
+		<path id="i" d="m0,50v-25m0,-25v0"/>
+	</defs>
+
+	<g stroke="#f0f0f0" stroke-width="20" transform="translate(10 10)"
+			stroke-linejoin="round" stroke-linecap="round" fill="transparent">
+		<use href="#I"/>
+		<use x="25" href="#N"/>
+		<use x="100" href="#K"/>
+		<use x="150" href="#i"/>
+		<use x="175" href="#T"/>
+		<use x="250" href="#i"/>
+		<use x="275" href="#K"/>
+		<use x="325" href="#i"/>
+	</g>
+</svg>
+
